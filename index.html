@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stitch Design - Photo Gallery</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="design-root">
+      <div class="layout-container">
+        <header class="main-header">
+          <div class="header-left">
+            <div class="logo-container">
+              <div class="logo-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6_330)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6_330">
+                      <rect width="48" height="48" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h2 class="site-title">Image Gallery</h2>
+            </div>
+            <nav class="main-nav">
+            </nav>
+          </div>
+          <div class="header-right">
+            <label class="search-label">
+              <div class="search-input-wrapper">
+                <div class="search-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input type="text" placeholder="Search" class="search-input" value="" />
+              </div>
+            </label>
+            <div class="header-buttons">
+
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="icon-button" id="profileButton">
+                <div class="button-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <div class="profile-modal" id="profileModal">
+                <div class="profile-content">
+                  <p class="profile-name">Harshit </p>
+                  <p class="profile-email">harshit.codealpha@example.com</p>
+                  <p class="profile-bio">
+                    Photography enthusiast capturing moments of nature and cityscapes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="content-wrapper">
+          <div class="main-content-container">
+            <div class="gallery-header-section">
+              <p class="gallery-title">Image Gallery</p>
+            </div>
+            <div class="filter-buttons-container">
+              <button class="filter-button active" data-category="All">
+                <p class="filter-text">All</p>
+                <div class="filter-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="filter-button" data-category="Nature">
+                <p class="filter-text">Nature</p>
+                <div class="filter-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="filter-button" data-category="Portraits">
+                <p class="filter-text">Portraits</p>
+                <div class="filter-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="filter-button" data-category="Cityscapes">
+                <p class="filter-text">Cityscapes</p>
+                <div class="filter-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="image-grid" id="imageGrid">
+              <!-- Images will be loaded here by JavaScript -->
+            </div>
+            <div class="pagination">
+              <a href="#" class="pagination-arrow" id="prevPage">
+                <div class="arrow-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18px"
+                    height="18px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+              <!-- Pagination links will be generated by JavaScript -->
+              <a href="#" class="pagination-arrow" id="nextPage">
+                <div class="arrow-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18px"
+                    height="18px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+      <button class="lightbox-close" id="lightboxClose">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24px"
+          height="24px"
+          fill="currentColor"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M200,64V192a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H192A8,8,0,0,1,200,64ZM184,72H72V184H184ZM168,88a8,8,0,0,0-8-8H96a8,8,0,0,0-8,8v80a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8ZM152,96v64H104V96Z"
+          ></path>
+        </svg>
+      </button>
+      <button class="lightbox-nav-button lightbox-prev" id="lightboxPrev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          fill="currentColor"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"
+          ></path>
+        </svg>
+      </button>
+      <img src="" alt="Lightbox Image" class="lightbox-image" id="lightboxImage" />
+      <button class="lightbox-nav-button lightbox-next" id="lightboxNext">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          fill="currentColor"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html> 
